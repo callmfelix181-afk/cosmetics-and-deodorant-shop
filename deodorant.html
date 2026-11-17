@@ -1,138 +1,90 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <title>Deodorant collection</title>
-    <link rel="stylesheet" href="do.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Deodorant Collection | Felix Shopping Mall</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="js/cart.js"></script>
 </head>
-<body>
-    <button onclick="window.location.href='index.html'">Back to Home</button>
- <h1>Deodorant collection</h1>
-    <p><b>Modern & Everyday Fresh</b></p>
-    <h2> Stay Fresh, Confident, and Protected All Day</h2>
-    <h3>Say goodbye to odor and embrace long-lasting freshness. Explore our collection of high-performance deodorants designed to keep you feeling dry, comfortable, and clean through every part of your day</h3>
+<body class="catalog-page deodorant-page">
+    <header class="catalog-header">
+        <a class="catalog-back-link" href="index.html"><span aria-hidden="true">←</span> Back to home</a>
+        <a class="catalog-brand" href="index.html">Felix <span>SHOPPING MALL</span></a>
+    </header>
 
-    <br>
-    <aside style="display: flex; align-items: flex-start; gap: 16px;">
-        <img src="https://th.bing.com/th/id/OIP.4zYv6t5L-gkSlJwVlMEYkgHaHa?w=194&h=194&c=7&r=0&o=7&pid=1.7&rm=3="150" height="150" img>
-        <div>
-            <h2>Nivea Roll-On (Pearl & Beauty / Dry Impact / Deep)</h2>
-            <p><strong>Price:</strong> ₦3,500</p>    
-            <a href="https://wa.me/2348166204931?text=I%20want%20to%20place%20an%20order">Order Now</a>
-        </div>
-    </aside>
-    <br>
-    <aside style="display: flex; align-items: flex-start; gap: 16px;">
-        <img src="https://th.bing.com/th/id/OIP.3DbfbATF4KQw93hM1ApkVgHaHa?w=190&h=190&c=7&r=0&o=7&pid=1.7&rm=3"150" height="150" img>
-        <div>
-            <h2>Rexona Roll-On (Shower Fresh / Xtracool)</h2>
-            <p><strong>Price:</strong> ₦3,000</p>    
-            <a href="https://wa.me/2348166204931?text=I%20want%20to%20place%20an%20order">Order Now</a>
-        </div>
-    </aside>
-    <br>    
-    <aside style="display: flex; align-items: flex-start; gap: 16px;">
-        <img src="https://th.bing.com/th/id/OIP.sLrZS0-LgH2dFW99pWo7GAHaHa?w=170&h=180&c=7&r=0&o=7&pid=1.7&rm=3"150" height="150" img>
-        <div>
-            <h2>Old Spice Deodorant Stick</h2>
-            <p><strong>Price:</strong> ₦8,000</p>    
-            <a href="https://wa.me/2348166204931?text=I%20want%20to%20place%20an%20order">Order Now</a>
-        </div>
-    </aside>
-    <br>                            
-    <aside style="display: flex; align-items: flex-start; gap: 16px;">
-        <img src="https://th.bing.com/th/id/OIP.KeUhYQF0k-Sv3WBGH90UkQHaHa?w=182&h=182&c=7&r=0&o=7&pid=1.7&rm=3"150" height="150" img>
-        <div>
-            <h2>Dove Advanced Care Deodorant Stick</h2>
-            <p><strong>Price:</strong> ₦13,000</p>    
-            <a href="https://wa.me/2348166204931?text=I%20want%20to%20place%20an%20order">Order Now</a>
-        </div>
-    </aside>
-    <br>
-    <aside style="display: flex; align-items: flex-start; gap: 16px;">
-        <img src="https://th.bing.com/th/id/OIP.1G5nhop-gW6ilZECcwETvAHaNK?w=132&h=187&c=7&r=0&o=7&pid=1.7&rm=3"150" height="150" img>
-        <div>
-            <h2>Riggs London / Confetti Body Spray</h2>
-            <p><strong>Price:</strong> ₦4,500</p>    
-            <a href="https://wa.me/2348166204931?text=I%20want%20to%20place%20an%20order">Order Now</a>
-        </div>  
-    </aside>  
-    
+    <main class="catalog-main">
+        <section class="catalog-hero">
+            <div class="catalog-hero-copy">
+                <p class="catalog-eyebrow">MODERN & EVERYDAY FRESH</p>
+                <h1>Feel fresh, confident, and ready for the day.</h1>
+                <p>Discover everyday deodorant favorites designed to keep you feeling clean and comfortable through whatever the day brings.</p>
+                <a class="catalog-hero-link" href="#deodorant-products">Shop deodorants <span aria-hidden="true">↓</span></a>
+            </div>
+            <div class="catalog-feature catalog-feature-fresh" aria-label="Five everyday freshness picks">
+                <span class="catalog-feature-sparkle" aria-hidden="true">✦</span>
+                <span class="catalog-feature-label">A FRESH START</span>
+                <strong>Good days<br>start here.</strong>
+                <span class="catalog-feature-note">5 everyday picks</span>
+            </div>
+        </section>
 
+        <section class="catalog-products" id="deodorant-products" aria-labelledby="deodorant-title">
+            <div class="catalog-section-heading">
+                <div>
+                    <p class="catalog-eyebrow">FIND YOUR EVERYDAY FAVORITE</p>
+                    <h2 id="deodorant-title">Deodorant collection</h2>
+                </div>
+                <p>Five fresh picks to help you feel comfortable all day.</p>
+            </div>
+            <div class="catalog-grid">
+                <article class="catalog-product-card">
+                    <img src="https://th.bing.com/th/id/OIP.4zYv6t5L-gkSlJwVlMEYkgHaHa?w=194&amp;h=194&amp;c=7&amp;r=0&amp;o=7&amp;pid=1.7&amp;rm=3=" alt="Nivea roll-on deodorant" width="220" height="220" loading="lazy">
+                    <div class="catalog-product-info">
+                        <h3>Nivea Roll-On (Pearl &amp; Beauty / Dry Impact / Deep)</h3>
+                        <p class="catalog-price"><span>Price</span> ₦3,500</p>
+                        <button class="cart-button" onclick="addToCart('Nivea Roll-On (Pearl &amp; Beauty / Dry Impact / Deep)', this)">Add to cart</button>
+                    </div>
+                </article>
+                <article class="catalog-product-card">
+                    <img src="https://th.bing.com/th/id/OIP.3DbfbATF4KQw93hM1ApkVgHaHa?w=190&amp;h=190&amp;c=7&amp;r=0&amp;o=7&amp;pid=1.7&amp;rm=3" alt="Rexona roll-on deodorant" width="220" height="220" loading="lazy">
+                    <div class="catalog-product-info">
+                        <h3>Rexona Roll-On (Shower Fresh / Xtracool)</h3>
+                        <p class="catalog-price"><span>Price</span> ₦3,000</p>
+                        <button class="cart-button" onclick="addToCart('Rexona Roll-On (Shower Fresh / Xtracool)', this)">Add to cart</button>
+                    </div>
+                </article>
+                <article class="catalog-product-card">
+                    <img src="https://th.bing.com/th/id/OIP.sLrZS0-LgH2dFW99pWo7GAHaHa?w=170&amp;h=180&amp;c=7&amp;r=0&amp;o=7&amp;pid=1.7&amp;rm=3" alt="Old Spice deodorant stick" width="220" height="220" loading="lazy">
+                    <div class="catalog-product-info">
+                        <h3>Old Spice Deodorant Stick</h3>
+                        <p class="catalog-price"><span>Price</span> ₦8,000</p>
+                        <button class="cart-button" onclick="addToCart('Old Spice Deodorant Stick', this)">Add to cart</button>
+                    </div>
+                </article>
+                <article class="catalog-product-card">
+                    <img src="https://th.bing.com/th/id/OIP.KeUhYQF0k-Sv3WBGH90UkQHaHa?w=182&amp;h=182&amp;c=7&amp;r=0&amp;o=7&amp;pid=1.7&amp;rm=3" alt="Dove Advanced Care deodorant stick" width="220" height="220" loading="lazy">
+                    <div class="catalog-product-info">
+                        <h3>Dove Advanced Care Deodorant Stick</h3>
+                        <p class="catalog-price"><span>Price</span> ₦13,000</p>
+                        <button class="cart-button" onclick="addToCart('Dove Advanced Care Deodorant Stick', this)">Add to cart</button>
+                    </div>
+                </article>
+                <article class="catalog-product-card">
+                    <img src="https://th.bing.com/th/id/OIP.1G5nhop-gW6ilZECcwETvAHaNK?w=132&amp;h=187&amp;c=7&amp;r=0&amp;o=7&amp;pid=1.7&amp;rm=3" alt="Riggs London and Confetti body spray" width="220" height="220" loading="lazy">
+                    <div class="catalog-product-info">
+                        <h3>Riggs London / Confetti Body Spray</h3>
+                        <p class="catalog-price"><span>Price</span> ₦4,500</p>
+                        <button class="cart-button" onclick="addToCart('Riggs London / Confetti Body Spray', this)">Add to cart</button>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    <footer class="catalog-footer">
+        <a href="index.html">Felix Shopping Mall</a>
+        <span>Stay fresh, every day.</span>
+    </footer>
 </body>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 </html>

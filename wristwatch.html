@@ -1,7 +1,8 @@
 <html>
 <head>
     <title>Wristwatch Collection </title>
-    <link rel="stylesheet" href="wristwatch.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="js/cart.js"></script>
 </head>
   
 <body>
@@ -17,7 +18,7 @@
      <div> 
         <h3>CURREN Luxury Chronograph Leather Watch - Black</h3>
         <p><strong>Price:</strong> ₦48,500</p>
-        <a href="https://wa.me/2348166204931?text=I%20want%20to%20place%20an%20order">Order Now</a>
+        <button class="cart-button" onclick="addToCart('CURREN Luxury Chronograph Leather Watch - Black', this)">Add to cart</button>
      </div>
   </aside>
 <br>
@@ -27,7 +28,7 @@
       <div>
            <h3>POEDAGAR Exclusive Sophisticated Black Steel Men's Silver Wristwatch</h3> 
            <p><strong>Price:</strong>42,750</p>
-           <a href="https://wa.me/2348166204931?text=I%20want%20to%20place%20an%20order">Order Now</a>
+           <button class="cart-button" onclick="addToCart('POEDAGAR Exclusive Sophisticated Black Steel Mens Silver Wristwatch', this)">Add to cart</button>
       </div>
     </aside>
 <br>
@@ -36,29 +37,46 @@
      <div> 
         <h3>Casio (G-Shock / Edifice Series)</h3>
         <p><strong>Price:</strong> ₦79,500</p>
-        <a href="https://wa.me/2348166204931?text=I%20want%20to%20place%20an%20order">Order Now</a>
+        <button class="cart-button" onclick="addToCart('Casio (G-Shock / Edifice Series)', this)">Add to cart</button>
      </div>
   </aside>  
 <br>
 <aside style="display: flex; align-items: flex-start; gap: 16px;">
         <img src="https://th.bing.com/th/id/OIP.q5PgQAAl1By-YGMgBvs3kgHaHa?w=186&h=186&c=7&r=0&o=7&pid=1.7&rm=3width=713"150" height="150" img>
      <div> 
-        <h3>Features: High shock resistance, chronograph, 100m–200m water resistance</h3>
+        <h3>Features: High shock resistance, chronograph, 100m200m water resistance</h3>
         <p><strong>Price:</strong> ₦250,000</p>
-        <a href="https://wa.me/2348166204931?text=I%20want%20to%20place%20an%20order">Order Now</a>
+        <button class="cart-button" onclick="addToCart('Features: High shock resistance, chronograph, 100m200m water resistance', this)">Add to cart</button>
      </div>
   </aside>
 <br>
 <aside style="display: flex; align-items: flex-start; gap: 16px;">
-    <img src="https://th.bing.com/th/id/OIP.HDqN0qTRNufQFv_Vq0wWmAHaLQ?w=132&h=180&c=7&r=0&o=7&pid=1.7&rm=3width=713"150" height="150" img>
+    <img src="https://th.bing.com/th/id/OIP.HDqN0qTRNufQFv_Vq0wWmAHaLQ?w=132&h=180&c=7&r=0&o=7&pid=1.7&rm=3width=713"190" height="190" img>
 <div> 
     <h3>Timex (Expedition / Fairfield)</h3>
-    <p><strong>Price:</strong> ₦210,00</p>
-    <a href="https://wa.me/2348166204931?text=I%20want%20to%20place%20an%20order">Order Now</a>
+    <p><strong>Price:</strong> ₦210,000</p>
+    <button class="cart-button" onclick="addToCart('Timex (Expedition / Fairfield)', this)">Add to cart</button>
 </div>
 </aside>        
-
-
+<br>
+<aside style="display: flex; align-items: flex-start; gap: 16px;">
+    <img src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcSfrRNiFupvMXEjDibI7yv_wCeO6LlgPs1FD0vY0E0DEhaqvAq_lKv-8IFAzWteCJCDD_VloNFCjurS0bNXrYuttne7NTUahUPuwCSmOj6Ys63eQi3jhgOCYL9Wywu0NlKh_t5WrDQ&usqp=CAc"170" height="170" img>
+  <div>
+    <h3>Patek Philippe</h3>
+    <p><strong><Price:1> ₦1,200,000</Price:1></strong></p>
+    <button class="cart-button" onclick="addToCart('Patek Philippe', this)">Add to cart</button>
+  </div>  
+</aside>
+<br>
+<aside style="display: flex; align-items: flex-start; gap: 16px;">
+    <img src="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcTXK7d8jzxE0Cz53vt4-ARZPeWyAm4dYaom90xpYJIyriLoUZWz2F1MqCPYWsBH0-z4ci2n5DNqRWmsfo34aq56ps0GyseCT27gADxU2JGhM9ShXyLBqOhErrgLL6GcOU9HxXaYmECpAg&usqp=CAc"140" height="140" img>
+  <div>   
+    <h3>Patek Philippe Nautilus</h3>
+    <p><strong>Price:₦125,600,000</strong></p>
+    <button class="cart-button" onclick="addToCart('Patek Philippe Nautilus', this)">Add to cart</button>
+  </div>  
+</aside>
+ 
 
 
 

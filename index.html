@@ -1,65 +1,114 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-     <title>Felix Online Shopping Mall</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Felix Online Shopping Mall</title>
     <link rel="stylesheet" href="style.css">
 </head>
+<body class="home-page">
+    <header class="home-header">
+        <a class="home-brand" href="index.html" aria-label="Felix Shopping Mall home">
+            <span class="home-brand-mark" aria-hidden="true">F</span>
+            <span class="home-brand-name">Felix<span>SHOPPING MALL</span></span>
+        </a>
+        <nav class="home-nav" aria-label="Shop categories">
+            <a href="cosmetics.html">Cosmetics</a>
+            <a href="deodorant.html">Deodorant</a>
+            <a href="perfume.html">Perfume</a>
+            <a href="wristwatch.html">Wristwatches</a>
+            <a href="gadget.html">Gadgets</a>
+        </nav>
+    </header>
 
-<body>
-    <h1>Welcome to Felix Online Shopping Mall</h1>
-    <h2>We provide you the best products</h2> 
-    <h4>We are so glad you are here. Whether you are upgrading your lifestyle, hunting for the perfect gift, or simply stocking up on daily essentials, we’ve gathered the best brands and deal-worthy finds all under one roof. Sit back, browse around, and enjoy a stress-free shopping experience made just for you</h4>
- <br>
-     <aside>
-           <ul>
-                <li><a href="cosmetics.html">Cosmetics</a></li>
-                <li><a href="deodorant.html">Deodorant</a></li>
-                <li><a href="perfume.html">Perfume</a></li>
-                <li><a href="wristwatch.html">Writstwatch</a></li>
-            </ul>
-     </aside>
-    <aside style="display: flex; align-items: flex-start; gap: 50px;">
-        <img src="image/secondpiconline.webp" alt=" width="350" height="350" img>
-    </aside>
+    <main>
+        <section class="home-hero">
+            <div class="home-hero-copy">
+                <p class="home-eyebrow">YOUR EVERYDAY FINDS, ALL IN ONE PLACE</p>
+                <h1>Find something you'll love.</h1>
+                <p class="home-intro">Welcome to Felix Online Shopping Mall. Explore beauty favorites, signature scents, timeless watches, and useful everyday gadgets—all in one easy place.</p>
+                <div class="home-hero-actions">
+                    <a class="home-primary-link" href="#categories">Explore the collections <span aria-hidden="true">→</span></a>
+                    <a class="home-secondary-link" href="cosmetics.html">Shop cosmetics</a>
+                </div>
+                <div class="home-highlight">
+                    <span class="home-highlight-icon" aria-hidden="true">✦</span>
+                    <span>Thoughtful finds for your everyday</span>
+                </div>
+            </div>
+            <div class="home-hero-visual">
+                <img src="image/secondpiconline.webp" alt="Shoppers exploring a bright modern shopping mall">
+                <div class="home-image-caption">
+                    <span class="home-caption-dot" aria-hidden="true"></span>
+                    <span>Make room for a new favorite</span>
+                </div>
+            </div>
+        </section>
 
-<br>
-    <aside style="display: flex; align-items: flex-start; gap: 50px;">
-        <img src="image/onlineshop.webp" alt=" width="350" height="350" img>
-    </aside>
+        <section class="home-categories" id="categories" aria-labelledby="categories-title">
+            <div class="home-section-heading">
+                <div>
+                    <p class="home-eyebrow">A LITTLE BIT OF EVERYTHING</p>
+                    <h2 id="categories-title">Shop by category</h2>
+                </div>
+                <p>Pick a collection and find your next favorite.</p>
+            </div>
+            <div class="home-category-grid">
+                <a class="home-category-card home-category-beauty" href="cosmetics.html">
+                    <span class="home-category-number">01</span>
+                    <span class="home-category-title">Cosmetics</span>
+                    <span class="home-category-description">Skincare and beauty essentials</span>
+                    <span class="home-category-arrow" aria-hidden="true">↗</span>
+                </a>
+                <a class="home-category-card home-category-fresh" href="deodorant.html">
+                    <span class="home-category-number">02</span>
+                    <span class="home-category-title">Deodorant</span>
+                    <span class="home-category-description">Fresh picks for every day</span>
+                    <span class="home-category-arrow" aria-hidden="true">↗</span>
+                </a>
+                <a class="home-category-card home-category-scent" href="perfume.html">
+                    <span class="home-category-number">03</span>
+                    <span class="home-category-title">Perfume</span>
+                    <span class="home-category-description">Find a scent that feels like you</span>
+                    <span class="home-category-arrow" aria-hidden="true">↗</span>
+                </a>
+                <a class="home-category-card home-category-time" href="wristwatch.html">
+                    <span class="home-category-number">04</span>
+                    <span class="home-category-title">Wristwatches</span>
+                    <span class="home-category-description">Timeless style, right on time</span>
+                    <span class="home-category-arrow" aria-hidden="true">↗</span>
+                </a>
+                <a class="home-category-card home-category-tech" href="gadget.html">
+                    <span class="home-category-number">05</span>
+                    <span class="home-category-title">Gadgets</span>
+                    <span class="home-category-description">Handy tech for daily life</span>
+                    <span class="home-category-arrow" aria-hidden="true">↗</span>
+                </a>
+            </div>
+        </section>
 
+        <section class="home-promo">
+            <img src="image/onlineshop.webp" alt="Friends enjoying a day of shopping together">
+            <div class="home-promo-copy">
+                <p class="home-eyebrow">YOUR NEXT GREAT FIND IS WAITING</p>
+                <h2>Good things are just a browse away.</h2>
+                <p>Take a look around, discover something new, and enjoy a relaxed shopping experience made for you.</p>
+                <a class="home-primary-link" href="#categories">Browse all collections <span aria-hidden="true">→</span></a>
+            </div>
+        </section>
+    </main>
 
+    <footer class="home-footer">
+        <a class="home-brand home-footer-brand" href="index.html">
+            <span class="home-brand-mark" aria-hidden="true">F</span>
+            <span class="home-brand-name">Felix<span>SHOPPING MALL</span></span>
+        </a>
+        <p>Find your next favorite.</p>
+    </footer>
 
-
-
-
-  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    <div class="floating-cart" aria-label="Shopping cart">
+        <span class="cart-icon">🛒</span>
+        <span class="cart-count">3</span>
+    </div>
 </body>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 </html>

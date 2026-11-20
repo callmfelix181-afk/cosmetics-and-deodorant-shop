@@ -1401,3 +1401,141 @@ h1 {
         grid-template-columns: 1fr;
     }
 }
+
+.iphone-price-note {
+    margin: -7px 0 22px;
+    padding: 14px 16px;
+    border-left: 3px solid #9c5e4d;
+    border-radius: 0 8px 8px 0;
+    background: #eee8e2;
+    color: #625850;
+    font-size: 12px;
+    line-height: 1.65;
+}
+
+.iphone-product-card .catalog-product-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.iphone-product-card .iphone-size-label {
+    margin: 0 0 7px;
+    color: #897a70;
+    font-size: 9px;
+    font-weight: bold;
+    letter-spacing: 1.3px;
+}
+
+.iphone-product-card .catalog-product-info h3 {
+    min-height: 0;
+}
+
+.iphone-product-card .catalog-price {
+    margin-bottom: 4px;
+}
+
+.iphone-naira-price {
+    margin: 0 0 14px;
+    color: #9c5e4d;
+    font-size: 19px;
+    font-weight: bold;
+}
+
+.iphone-color-options {
+    min-width: 0;
+    margin: 0 0 14px;
+    padding: 0;
+    border: 0;
+}
+
+.iphone-color-options legend {
+    margin-bottom: 8px;
+    color: #625850;
+    font-size: 11px;
+    font-weight: bold;
+}
+
+.iphone-color-swatches {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px 10px;
+}
+
+.iphone-color-swatches input {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    clip-path: inset(50%);
+}
+
+.iphone-color-swatches label {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    color: #625850;
+    font-size: 10px;
+    cursor: pointer;
+}
+
+.iphone-swatch-chip {
+    width: 17px;
+    height: 17px;
+    display: inline-block;
+    border: 1px solid rgba(52, 45, 41, 0.18);
+    border-radius: 50%;
+}
+
+.iphone-swatch-burgundy {
+    background: #702f39;
+}
+
+.iphone-swatch-glacier {
+    background: #cbd8db;
+}
+
+.iphone-swatch-silver {
+    background: #d8d8d4;
+}
+
+.iphone-swatch-black {
+    background: #262626;
+}
+
+.iphone-swatch-night-sky {
+    background: #303744;
+}
+
+.iphone-swatch-star-white {
+    background: #f5f2eb;
+}
+
+.iphone-color-swatches input:checked + label .iphone-swatch-chip {
+    box-shadow: 0 0 0 2px #fffdfb, 0 0 0 4px #9c5e4d;
+}
+
+.iphone-color-swatches input:focus-visible + label {
+    outline: 2px solid #bd8a55;
+    outline-offset: 3px;
+}
+
+.iphone-product-card .cart-button {
+    margin-top: auto;
+}
+
+@media (max-width: 560px) {
+    .iphone-price-note {
+        font-size: 11px;
+    }
+
+    .iphone-product-card .catalog-product-info h3 {
+        min-height: 0;
+        font-size: 15px;
+    }
+
+    .iphone-naira-price {
+        font-size: 16px;
+    }
+}
